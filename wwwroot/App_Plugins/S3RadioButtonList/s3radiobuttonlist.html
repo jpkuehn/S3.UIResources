@@ -1,0 +1,12 @@
+﻿<div ng-controller="S3RadioButtonListController" class="wmd-panel">
+    <style ng-if="horizontalStyle">
+        .umb-form-check__info {
+            margin: 0px 15px 0px 25px !important;
+        }
+    </style>
+    <ul class="unstyled" ng-if="textKeyList.length">
+        <li ng-repeat="item in textKeyList" ng-style="{{horizontalStyle}}">
+            <umb-radiobutton name="{{model.alias}}_{{uniqueId}}" value="{{item.key}}" model="model.value" text="{{item.text}}"></umb-radiobutton>
+        </li>
+    </ul>
+</div>
