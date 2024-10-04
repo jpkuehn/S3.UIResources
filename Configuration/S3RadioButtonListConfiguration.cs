@@ -1,6 +1,6 @@
 ﻿using Umbraco.Cms.Core.PropertyEditors;
 
-namespace S3.UIResources.Configuration; 
+namespace S3.UI.Resources.Configuration; 
 
 public class S3RadioButtonListConfiguration {
     [ConfigurationField(
@@ -13,7 +13,7 @@ public class S3RadioButtonListConfiguration {
     [ConfigurationField(
         "layoutDirection",
         "Layout Direction",
-        "/App_Plugins/S3RadioButtonList/layoutdirection.html",
+        "/_content/S3.UI.Resources/App_Plugins/S3RadioButtonList/layoutdirection.html",
         Description = "The layout direction")]
     public string? LayoutDirection { get; set; }
 }

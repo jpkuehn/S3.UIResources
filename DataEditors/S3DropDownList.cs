@@ -1,17 +1,16 @@
 ﻿using Umbraco.Cms.Core.PropertyEditors;
 using Umbraco.Cms.Core.IO;
-using S3.UIResources.Configuration;
+using S3.UI.Resources.Configuration;
 
-namespace S3.UIResources.DataEditors;
+namespace S3.UI.Resources.DataEditors;
 
 [DataEditor(
     alias: "S3.DropDownList",
     name: "S3 DropDownList",
-    view: "/App_Plugins/S3DropDownList/s3dropdownlist.html",
+    view: "/_content/S3.UI.Resources/App_Plugins/S3DropDownList/s3dropdownlist.html",
     Group = "Lists",
     Icon = "icon-indent")]
-public class S3DropDownList : DataEditor
-{
+public class S3DropDownList : DataEditor {
 
     private readonly IIOHelper _ioHelper;
 

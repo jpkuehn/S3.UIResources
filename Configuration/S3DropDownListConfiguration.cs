@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Umbraco.Cms.Core.PropertyEditors;
 
-namespace S3.UIResources.Configuration;
+namespace S3.UI.Resources.Configuration;
 
 public class S3DropDownListConfiguration {
     [ConfigurationField(
